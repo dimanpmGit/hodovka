@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автозапчасти от Антохи</title>
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                  О нас
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                  Клиентам
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                  Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="user__list">
+                        <li class="user__list-item">
+                            <a class="user__list-link menu__link" href="#">
+                              Войти
+                            </a>
+                        </li>
+                        <li class="user__list-item">
+                            <a class="user__list-registration menu__link" href="#">
+                              Создать аккаунт
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__center">
+            <div class="container">
+                <div class="header__center-inner">
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="">
+                    </a>
+                    <a class="basket" href="#">
+                        <img src="images/basket.svg" alt="корзина">
+                        <p class="basket__count">0</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__bottom-search">
+                    <form action="" class="search__form">
+                        <input class="search__input" type="text" placeholder="Введите номер" id="input__plus">
+                        <button class="search__btn btn" type="button" id="search__btn">Найти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <span>Запчасти Toyota</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="catalog">
+        <div class="container">
+            <h1 class="catalog__title">
+                Запчасти Toyota
+            </h1>
+            <div class="catalog__filter">
+                <div class="catalog__filter-items">
+                    <button>Легковые</button>
+                    <button>Коммерческие</button>
+                    <button>Мото</button>
+                    <button>Еще</button>
+                </div>
+                <div class="catalog__filter-btn">
+                    <select>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                    <button class="catalog__filter-btngrid">
+                      <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="1" y="1" width="21" height="19" stroke="#2F3035" stroke-width="2"/>
+                          <rect x="7" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2"/>
+                          <rect x="7" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2"/>
+                          <rect x="14" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2"/>
+                          <rect x="14" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2"/>
+                      </svg>
+                    </button>
+                    <button class="catalog__filter-btnline">
+                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="1">
+                            <rect x="6" width="19" height="3" rx="1.5" fill="#2F3035"/>
+                            <rect x="6" y="8" width="19" height="3" rx="1.5" fill="#2F3035"/>
+                            <rect x="6" y="16" width="19" height="3" rx="1.5" fill="#2F3035"/>
+                            <rect width="3" height="3" rx="1.5" fill="#2F3035"/>
+                            <rect y="8" width="3" height="3" rx="1.5" fill="#2F3035"/>
+                            <rect y="16" width="3" height="3" rx="1.5" fill="#2F3035"/>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="catalog__inner">
+                <aside class="catalog__inner-aside">
+                    <div class="aside-categories">
+                        <h4 class="aside-categories__title">Категории</h4>
+                        <ul class="aside-categories__list">
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Аксессуары
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Аппаратное обеспечение
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Выпуск
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Генератор
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Двигатель
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Жидкости (оригинальные жидкости)
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Зеркала
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Инструменты
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Интерьер
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Колеса
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Коробка передач
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Кузов
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Освещение
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Подвеска
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Стартер
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Сцепление
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Топливная система
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link aside-categories__link-active" href="#">
+                                  Тормоза
+                                </a>
+                            </li>
+                            <li class="aside-categories__item">
+                                <a class="aside-categories__link" href="#">
+                                  Электрика
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <div class="catalog__inner-list">
+                    <div class="product-item--wrapper">
+                        <button class="product-item--basket">
+                                          <img src="images/basket_white.svg" alt="">
+                                        </button>
+                        <a class="product-item__notify-link" href="#">
+                            <span>Сообщить о поступлении</span>
+                        </a>
+                        <a class="product-item" href="#">
+                            <div class="product-item--hovertext">
+                                посмотреть товар
+                            </div>
+                            <img class="product-item--img" src="images/products/pads200x200.jpg" alt="">
+                            <h4 class="product-item--title">TOYOTA</h4>
+                            <p class="product-item--name">0446552180 (04465-52180) TOYOTA Pad kit, disc brake</p>
+                            <p class="product-item__price">3180 ₽</p>
+                            <p class="product-item__sale-price">5800 ₽</p>
+                            <p class="product-item__notify-text">Нет в наличии</p>
+                        </a>
+                    </div>
+                    <div class="product-item--wrapper">
+                        <button class="product-item--basket">
+                                          <img src="images/basket_white.svg" alt="">
+                                        </button>
+                        <a class="product-item__notify-link" href="#">
+                            <span>Сообщить о поступлении</span>
+                        </a>
+                        <a class="product-item product-item__sale" href="#">
+                            <div class="product-item--hovertext">
+                                посмотреть товар
+                            </div>
+                            <img class="product-item--img" src="images/products/pads200x200.jpg" alt="">
+                            <h4 class="product-item--title">TOYOTA</h4>
+                            <p class="product-item--name">0446552180 (04465-52180) TOYOTA Pad kit, disc brake</p>
+                            <p class="product-item__price">3180 ₽</p>
+                            <p class="product-item__sale-price">5800 ₽</p>
+                            <p class="product-item__notify-text">Нет в наличии</p>
+                        </a>
+                    </div>
+                    <div class="product-item--wrapper product-item__not-avaliable">
+                        <button class="product-item--basket">
+                                          <img src="images/basket_white.svg" alt="">
+                                        </button>
+                        <a class="product-item__notify-link" href="#">
+                            <span>Сообщить о поступлении</span>
+                        </a>
+                        <a class="product-item" href="#">
+                            <div class="product-item--hovertext">
+                                посмотреть товар
+                            </div>
+                            <img class="product-item--img" src="images/products/pads200x200.jpg" alt="">
+                            <h4 class="product-item--title">TOYOTA</h4>
+                            <p class="product-item--name">0446552180 (04465-52180) TOYOTA Pad kit, disc brake</p>
+                            <p class="product-item__price">3180 ₽</p>
+                            <p class="product-item__sale-price">5800 ₽</p>
+                            <p class="product-item__notify-text">Нет в наличии</p>
+                        </a>
+                    </div>
+                    <div class="product-item--wrapper">
+                        <button class="product-item--basket">
+                                          <img src="images/basket_white.svg" alt="">
+                                        </button>
+                        <a class="product-item__notify-link" href="#">
+                            <span>Сообщить о поступлении</span>
+                        </a>
+                        <a class="product-item" href="#">
+                            <div class="product-item--hovertext">
+                                посмотреть товар
+                            </div>
+                            <img class="product-item--img" src="images/products/pads200x200.jpg" alt="">
+                            <h4 class="product-item--title">TOYOTA</h4>
+                            <p class="product-item--name">0446552180 (04465-52180) TOYOTA Pad kit, disc brake</p>
+                            <p class="product-item__price">3180 ₽</p>
+                            <p class="product-item__sale-price">5800 ₽</p>
+                            <p class="product-item__notify-text">Нет в наличии</p>
+                        </a>
+                    </div>
+                    <div class="product-item--wrapper">
+                        <button class="product-item--basket">
+                                          <img src="images/basket_white.svg" alt="">
+                                        </button>
+                        <a class="product-item__notify-link" href="#">
+                            <span>Сообщить о поступлении</span>
+                        </a>
+                        <a class="product-item" href="#">
+                            <div class="product-item--hovertext">
+                                посмотреть товар
+                            </div>
+                            <img class="product-item--img" src="images/products/pads200x200.jpg" alt="">
+                            <h4 class="product-item--title">TOYOTA</h4>
+                            <p class="product-item--name">0446552180 (04465-52180) TOYOTA Pad kit, disc brake</p>
+                            <p class="product-item__price">3180 ₽</p>
+                            <p class="product-item__sale-price">5800 ₽</p>
+                            <p class="product-item__notify-text">Нет в наличии</p>
+                        </a>
+                    </div>
+                    <div class="product-item--wrapper">
+                        <button class="product-item--basket">
+                                          <img src="images/basket_white.svg" alt="">
+                                        </button>
+                        <a class="product-item__notify-link" href="#">
+                            <span>Сообщить о поступлении</span>
+                        </a>
+                        <a class="product-item" href="#">
+                            <div class="product-item--hovertext">
+                                посмотреть товар
+                            </div>
+                            <img class="product-item--img" src="images/products/pads200x200.jpg" alt="">
+                            <h4 class="product-item--title">TOYOTA</h4>
+                            <p class="product-item--name">0446552180 (04465-52180) TOYOTA Pad kit, disc brake</p>
+                            <p class="product-item__price">3180 ₽</p>
+                            <p class="product-item__sale-price">5800 ₽</p>
+                            <p class="product-item__notify-text">Нет в наличии</p>
+                        </a>
+                    </div>
+                    <div class="product-item--wrapper">
+                        <button class="product-item--basket">
+                                          <img src="images/basket_white.svg" alt="">
+                                        </button>
+                        <a class="product-item__notify-link" href="#">
+                            <span>Сообщить о поступлении</span>
+                        </a>
+                        <a class="product-item" href="#">
+                            <div class="product-item--hovertext">
+                                посмотреть товар
+                            </div>
+                            <img class="product-item--img" src="images/products/pads200x200.jpg" alt="">
+                            <h4 class="product-item--title">TOYOTA</h4>
+                            <p class="product-item--name">0446552180 (04465-52180) TOYOTA Pad kit, disc brake</p>
+                            <p class="product-item__price">3180 ₽</p>
+                            <p class="product-item__sale-price">5800 ₽</p>
+                            <p class="product-item__notify-text">Нет в наличии</p>
+                        </a>
+                    </div>
+                    <div class="product-item--wrapper">
+                        <button class="product-item--basket">
+                                          <img src="images/basket_white.svg" alt="">
+                                        </button>
+                        <a class="product-item__notify-link" href="#">
+                            <span>Сообщить о поступлении</span>
+                        </a>
+                        <a class="product-item" href="#">
+                            <div class="product-item--hovertext">
+                                посмотреть товар
+                            </div>
+                            <img class="product-item--img" src="images/products/pads200x200.jpg" alt="">
+                            <h4 class="product-item--title">TOYOTA</h4>
+                            <p class="product-item--name">0446552180 (04465-52180) TOYOTA Pad kit, disc brake</p>
+                            <p class="product-item__price">3180 ₽</p>
+                            <p class="product-item__sale-price">5800 ₽</p>
+                            <p class="product-item__notify-text">Нет в наличии</p>
+                        </a>
+                    </div>
+                    <div class="product-item--wrapper">
+                        <button class="product-item--basket">
+                                          <img src="images/basket_white.svg" alt="">
+                                        </button>
+                        <a class="product-item__notify-link" href="#">
+                            <span>Сообщить о поступлении</span>
+                        </a>
+                        <a class="product-item" href="#">
+                            <div class="product-item--hovertext">
+                                посмотреть товар
+                            </div>
+                            <img class="product-item--img" src="images/products/pads200x200.jpg" alt="">
+                            <h4 class="product-item--title">TOYOTA</h4>
+                            <p class="product-item--name">0446552180 (04465-52180) TOYOTA Pad kit, disc brake</p>
+                            <p class="product-item__price">3180 ₽</p>
+                            <p class="product-item__sale-price">5800 ₽</p>
+                            <p class="product-item__notify-text">Нет в наличии</p>
+                        </a>
+                    </div>
+                    <div class="product-item--wrapper">
+                        <button class="product-item--basket">
+                                          <img src="images/basket_white.svg" alt="">
+                                        </button>
+                        <a class="product-item__notify-link" href="#">
+                            <span>Сообщить о поступлении</span>
+                        </a>
+                        <a class="product-item" href="#">
+                            <div class="product-item--hovertext">
+                                посмотреть товар
+                            </div>
+                            <img class="product-item--img" src="images/products/pads200x200.jpg" alt="">
+                            <h4 class="product-item--title">TOYOTA</h4>
+                            <p class="product-item--name">0446552180 (04465-52180) TOYOTA Pad kit, disc brake</p>
+                            <p class="product-item__price">3180 ₽</p>
+                            <p class="product-item__sale-price">5800 ₽</p>
+                            <p class="product-item__notify-text">Нет в наличии</p>
+                        </a>
+                    </div>
+                    <div class="product-item--wrapper">
+                        <button class="product-item--basket">
+                                          <img src="images/basket_white.svg" alt="">
+                                        </button>
+                        <a class="product-item__notify-link" href="#">
+                            <span>Сообщить о поступлении</span>
+                        </a>
+                        <a class="product-item" href="#">
+                            <div class="product-item--hovertext">
+                                посмотреть товар
+                            </div>
+                            <img class="product-item--img" src="images/products/pads200x200.jpg" alt="">
+                            <h4 class="product-item--title">TOYOTA</h4>
+                            <p class="product-item--name">0446552180 (04465-52180) TOYOTA Pad kit, disc brake</p>
+                            <p class="product-item__price">3180 ₽</p>
+                            <p class="product-item__sale-price">5800 ₽</p>
+                            <p class="product-item__notify-text">Нет в наличии</p>
+                        </a>
+                    </div>
+                    <div class="product-item--wrapper">
+                        <button class="product-item--basket">
+                                          <img src="images/basket_white.svg" alt="">
+                                        </button>
+                        <a class="product-item__notify-link" href="#">
+                            <span>Сообщить о поступлении</span>
+                        </a>
+                        <a class="product-item" href="#">
+                            <div class="product-item--hovertext">
+                                посмотреть товар
+                            </div>
+                            <img class="product-item--img" src="images/products/pads200x200.jpg" alt="">
+                            <h4 class="product-item--title">TOYOTA</h4>
+                            <p class="product-item--name">0446552180 (04465-52180) TOYOTA Pad kit, disc brake</p>
+                            <p class="product-item__price">3180 ₽</p>
+                            <p class="product-item__sale-price">5800 ₽</p>
+                            <p class="product-item__notify-text">Нет в наличии</p>
+                        </a>
+                    </div>
+                    <div class="pagination">
+                        <ul class="pagination-list">
+                            <li class="pagination-list__item active">
+                                <span>1</span>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#">2</a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#">3</a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#">4</a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#">5</a>
+                            </li>
+                            <li class="pagination-list__item pagination-list__item--dots">
+                                <span>...</span>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#">11</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-inner">
+                    <div class="footer__top-item">
+                        <h6 class="footer__top-title">
+                            Есть вопросы?
+                        </h6>
+                        <p class="footer__top-text">
+                            Оставьте контакты, мы вам перезвоним
+                        </p>
+                    </div>
+                    <div class="footer__top-item footer__top-item--right">
+                        <form class="footer__form">
+                            <input class="footer__form-input search__input" type="text" placeholder="Ваш номер телефона">
+                            <button class="footer__form-btn btn">Отправить</button>
+                        </form>
+                        <div class="footer__form-confidential">
+                            <p class="footer__form-confidential--text">Нажимая кнопку “Отправить”, вы соглашаетесь с
+                                <span class="footer__form-confidential--link">
+                              <a href="#">политикой конфиденциальности</a></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="copyright">
+                    © ООО"ХОДОВКА" 2022
+                </p>
+                <a class="footer__bottom-email" href="mailto:hello@hodovka.su">hello@hodovka.su</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

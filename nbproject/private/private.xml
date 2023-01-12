@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/V:/www/OpenServer/domains/hodovka/config/routes.php</file>
+            <file>file:/V:/www/OpenServer/domains/hodovka/controllers/NewsController.php</file>
+            <file>file:/V:/www/OpenServer/domains/hodovka/components/router.php</file>
+            <file>file:/V:/www/OpenServer/domains/hodovka/controllers/ProductController.php</file>
+            <file>file:/V:/www/OpenServer/domains/hodovka/components/db.php</file>
+            <file>file:/V:/www/OpenServer/domains/hodovka/.htaccess</file>
+            <file>file:/V:/www/OpenServer/domains/hodovka/models/news.php</file>
+            <file>file:/V:/www/OpenServer/domains/hodovka/index.php</file>
+            <file>file:/V:/www/OpenServer/domains/hodovka/views/news/index.php</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автозапчасти от Антохи</title>
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                  О нас
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                  Клиентам
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                  Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="user__list">
+                        <li class="user__list-item">
+                            <a class="user__list-link menu__link" href="#">
+                              Войти
+                            </a>
+                        </li>
+                        <li class="user__list-item">
+                            <a class="user__list-registration menu__link" href="#">
+                              Создать аккаунт
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__center">
+            <div class="container">
+                <div class="header__center-inner">
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="">
+                    </a>
+                    <a class="basket" href="#">
+                        <img src="images/basket.svg" alt="корзина">
+                        <p class="basket__count">0</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__bottom-search">
+                    <form action="" class="search__form">
+                        <input class="search__input" type="text" placeholder="Введите номер" id="input__plus">
+                        <button class="search__btn btn" type="button" id="search__btn">Найти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#">Запчасти Toyota</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <span>0446552180 (04465-52180) TOYOTA Pad kit, disc brake</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="product-card">
+        <div class="container">
+            <div class="product-card__inner">
+                <div class="product-card__img-box product-item__sale">
+                    <img class="product-card__img" src="images/products/pads500x500.jpg" alt="">
+                    <p class="product-card__price-old">5800 ₽</p>
+                    <p class="product-card__price-new">2800 ₽</p>
+                </div>
+                <div class="product-card__content">
+                    <h1 class="product-card__title">
+                        TOYOTA Pad kit, disc brake
+                    </h1>
+                    <p class="product-card__code">
+                        Код товара: 0446552180 (04465-52180)
+                    </p>
+                    <div class="product-card__buttons">
+                        <a class="product-card__icon-comparison" href="#">
+                            <img src="images/comparison-icon.svg" alt="">
+                        </a>
+                        <a class="rating" href="#">
+                            <div class="rate-yo" data-rateyo-rating="4"></div>
+                        </a>
+                    </div>
+                    <div class="tabs__wrapper product-card__tabs-wrapper">
+                        <div class="tabs product-card__tabs">
+                            <a class="tab product-card__tab tab-active" href="#characteristics">Характеристики</a>
+                            <a class="tab product-card__tab" href="#availability">Наличие в магазине</a>
+                        </div>
+                        <div class="tabs-container">
+                            <div id="characteristics" class="tabs-content product-card__tab-content tabs-content--active">
+                                <ul class="product-card__list">
+                                    <li class="product-card__item">
+                                        <div class="product-card__item-left">Производитель</div>
+                                        <div class="product-card__item-right">Тойота</div>
+                                    </li>
+                                    <li class="product-card__item">
+                                        <div class="product-card__item-left">Номер запчасти</div>
+                                        <div class="product-card__item-right">0446552180 (04465-52180)</div>
+                                    </li>
+                                    <li class="product-card__item">
+                                        <div class="product-card__item-left">Размеры</div>
+                                        <div class="product-card__item-right">42 х 23 х 20 см</div>
+                                    </li>
+                                    <li class="product-card__item">
+                                        <div class="product-card__item-left">Масса</div>
+                                        <div class="product-card__item-right">0.5 кг</div>
+                                    </li>
+                                </ul>
+                                <div class="product-card__more">
+                                    <a class="product-card__more-link" href="#">Показать еще</a>
+                                </div>
+                                <div class="product-card__btn-buy">
+                                    <button>Купить</button>
+                                </div>
+                            </div>
+                            <div id="availability" class="tabs-content product-card__tab-content">
+                                Content 2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-inner">
+                    <div class="footer__top-item">
+                        <h6 class="footer__top-title">
+                            Есть вопросы?
+                        </h6>
+                        <p class="footer__top-text">
+                            Оставьте контакты, мы вам перезвоним
+                        </p>
+                    </div>
+                    <div class="footer__top-item footer__top-item--right">
+                        <form class="footer__form">
+                            <input class="footer__form-input search__input" type="text" placeholder="Ваш номер телефона">
+                            <button class="footer__form-btn btn">Отправить</button>
+                        </form>
+                        <div class="footer__form-confidential">
+                            <p class="footer__form-confidential--text">Нажимая кнопку “Отправить”, вы соглашаетесь с
+                                <span class="footer__form-confidential--link">
+                              <a href="#">политикой конфиденциальности</a></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="copyright">
+                    © ООО"ХОДОВКА" 2022
+                </p>
+                <a class="footer__bottom-email" href="mailto:hello@hodovka.su">hello@hodovka.su</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+</body>
+
+</html>
